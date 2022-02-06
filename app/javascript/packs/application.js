@@ -11,6 +11,7 @@ import 'jquery'
 import 'bootstrap'
 import 'admin-lte'
 import "@fortawesome/fontawesome-free/css/all"
+import '../lib/flash'
 
 Rails.start()
 Turbolinks.start()

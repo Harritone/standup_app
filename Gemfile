@@ -43,6 +43,7 @@ gem 'rails-controller-testing'
 gem 'capybara'
 gem 'simplecov', :require => false, :group => :test
 gem "factory_bot_rails"
+gem 'webdrivers'
 end
 
 group :development do

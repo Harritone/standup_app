@@ -1,9 +1,10 @@
 require 'rails_helper'
 
-RSpec.describe "Statics", type: :request do
+RSpec.describe StaticController, type: :controller do
   describe "GET /support" do
     it "returns http success" do
-      get "/support"
+      login_user
+      get :support
       expect(response).to have_http_status(:success)
     end
   end

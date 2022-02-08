@@ -1,7 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe UsersController, type: :controller do
-  before { login_user }
+  # before { login_admin }
+  login_admin
 
   describe 'GET #index' do
     it 'returns http success' do

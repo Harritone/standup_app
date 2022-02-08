@@ -40,9 +40,9 @@ RSpec.configure do |config|
   config.include FactoryBot::Syntax::Methods
   config.include Devise::Test::ControllerHelpers, type: :controller
   config.include Devise::Test::ControllerHelpers, type: :view
-  config.include ControllersHelpers, type: :controller
+  # config.include ControllersHelpers, type: :controller
 
-  # config.extend ControllerMacros, type: :controller
+  config.extend ControllerMacros, type: :controller
   config.extend SystemMacros, type: :system
   # config.extend ControllerMacros, type: :controller
 

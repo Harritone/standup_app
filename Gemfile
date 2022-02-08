@@ -30,12 +30,6 @@ gem 'money-rails'
 
 gem 'slack-notifier'
 
-# Use Active Storage variant
-# gem 'image_processing', '~> 1.2'
-
-# Reduces boot times through caching; required in config/boot.rb
-# gem 'bootsnap', '>= 1.4.2', require: false
-
 group :development, :test do
 gem 'byebug', platforms: [:mri]
 gem 'rspec-rails'
@@ -43,6 +37,7 @@ gem 'rails-controller-testing'
 gem 'capybara'
 gem 'simplecov', :require => false, :group => :test
 gem "factory_bot_rails"
+gem 'faker'
 gem 'webdrivers'
 end
 

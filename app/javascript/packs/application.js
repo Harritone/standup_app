@@ -12,6 +12,8 @@ import 'bootstrap'
 import 'admin-lte'
 import "@fortawesome/fontawesome-free/css/all"
 import '../lib/flash'
+import 'bootstrap-datepicker'
+import '../lib/dateUpdater'
 
 Rails.start()
 Turbolinks.start()

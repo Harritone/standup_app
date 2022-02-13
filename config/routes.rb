@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   resources :standups
   resource :accounts
+  resources :teams, path: 't'
 
   scope 'account', as: 'account' do
     resources :users

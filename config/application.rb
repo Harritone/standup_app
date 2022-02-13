@@ -23,6 +23,9 @@ module StandupApp
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
+    config.time_zone = 'UTC'
+    config.active_record.default_timezone = :utc
+    config.active_record.time_zone_aware_types = %i[datetime, time]
 
     # Configuration for the application, engines, and railties goes here.
     #

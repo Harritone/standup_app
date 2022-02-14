@@ -21,7 +21,7 @@ class StandupsController < ApplicationController
     # return if check_for_existance
     return if check_for_blank_date || check_for_existance
 
-    @standup.find_by(
+    @standup = Standup.find_by(
       user_id: current_user.id,
       standup_date: current_date
     )
@@ -68,7 +68,7 @@ class StandupsController < ApplicationController
       params.require(:standup).permit(:standup_date,
                                       dids_attributes: [:id, :title, :_destroy],
                                       todos_attributes: [:id, :title, :_destroy],
-                                      blockers_attributes: [:ud, :title, :_destroy])
+                                      blockers_attributes: [:id, :title, :_destroy])
     end
 
     def check_for_blank_date

@@ -14,6 +14,9 @@ import "@fortawesome/fontawesome-free/css/all"
 import '../lib/flash'
 import 'bootstrap-datepicker'
 import '../lib/dateUpdater'
+import '@nathanvda/cocoon';
+// import { cocconInitializer } from 'cocoon'
+// cocconInitializer($, jQuery)
 
 Rails.start()
 Turbolinks.start()

@@ -1,5 +1,5 @@
 class StandupsController < ApplicationController
-  before_action :set_standup, only: %i[ show edit update destroy ]
+  before_action :set_standup, only: %i[ show update destroy ]
 
   def index
     redirect_to root_path
